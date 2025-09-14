@@ -1,5 +1,5 @@
 a=list(map(int,input().split()))
-b=len(a)
-for i in range(b,-1,-1):
-    print(a[i])
-    
+for i in range(len(a)):
+    a[i],a[len(a)-i-1]=a[len(a)-i-1],a[i]
+print(a)
+
